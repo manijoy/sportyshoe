@@ -42,6 +42,7 @@ INSERT INTO `orders` (`id`, `user_id`, `product_id`) VALUES
 (10, 20, 3),
 (11, 20, 1),
 (12, 20, 4);
+drop table orders;
 
 -- --------------------------------------------------------
 
@@ -63,11 +64,11 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`id`, `name`, `company`, `size`, `price`, `image_link`) VALUES
-(1, 'Adidas Originals', 'Adidas', 36, 55, 'https://i8.amplience.net/i/jpl/jd_397863_a?qlt=92&w=750&h=531&v=1&fmt=webp'),
-(2, 'The ZX 750', 'Nike', 36, 131, 'https://i8.amplience.net/i/jpl/jd_355284_a?qlt=92&w=750&h=531&v=1&fmt=webp'),
-(3, 'Nike Air Max 97', 'Nike', 46, 157, 'https://i8.amplience.net/i/jpl/jd_414734_a?qlt=92&w=750&h=531&v=1&fmt=webp'),
-(4, 'Vans Sk8-Hi Flame', 'Vans', 45, 211, 'https://i8.amplience.net/i/jpl/jd_299533_a?qlt=92&w=750&h=531&v=1&fmt=webp');
-
+(1, 'columbia sportwear co', 'Columbia ', 45, 55, 'https://i.imgur.com/R4WLP4G.jpg'),
+(2, 'Timerland originals', 'Timberland', 36, 131, 'https://i.imgur.com/Q9IPIid.jpg'),
+(3, 'Saucony 765', 'Saucony', 46, 157, 'https://i.imgur.com/gbvL7MN.jpg'),
+(4, 'Anta sports', 'Anta', 45, 211, 'https://i.imgur.com/0Nsm0Os.jpg');
+drop table products;
 -- --------------------------------------------------------
 
 --
@@ -87,13 +88,14 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `type`, `username`, `password`, `age`) VALUES
-(1, 0, 'Mujtaba', '1234', 24),
-(2, 0, 'ali', '1234', 34),
-(3, 0, 'Ajmal', '1234', 1),
-(4, 0, 'Sami', '1234', 23),
+(1, 0, 'Bharat', '1234', 24),
+(2, 0, 'Manikanta', '1234', 34),
+(3, 0, 'roshi', '1234', 1),
+(4, 0, 'kamal', '1234', 23),
 (16, 1, 'admin', 'admin', 0),
-(17, 0, 'Husam', '4242', 24),
-(20, 0, 'Mohmed', '12345', 33);
+(17, 0, 'sanju', '4242', 24),
+(20, 0, 'ram', '12345', 33);
+drop table users;
 
 --
 -- Indexes for dumped tables
